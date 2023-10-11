@@ -1,6 +1,15 @@
 # Core Pkgs
 import streamlit as st 
 import pandas as pd
+from PIL import Image
+
+im = Image.open('data/favicon.png')
+
+st.set_page_config(
+    page_title="Sqlify Playground",
+	page_icon=im,
+    layout="wide",
+)
 
 # DB Mgmt
 import sqlite3 
